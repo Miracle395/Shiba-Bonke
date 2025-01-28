@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="bonke.png" type="image/gif" sizes="16x16">
+    <title>Shiba Bonke - Where memes rule and fun is profitable. </title>
+    
+    <!-- Include Font Awesome CDN in your <head> -->
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">  
+        
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+</style>
+    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+</style>
+    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+</style>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/static/trading/css/style.css">
+    
+     <!-- Google Material Icons CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        .social-icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icon-link {
+    margin: 0 15px;
+    font-size: 30px;
+    color: #FF01FB;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #007bff; /* Change to the hover color you prefer */
+}
+    </style>
+    
+    <style>
+        /* Hamburger Menu Styling */
+        .navbar-toggler {
+            border: none;
+            background: transparent;
+            padding: 0;
+        }
+
+        .navbar-toggler-icon {
+            width: 30px;
+            height: 2px;
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background-color: #ffffff;
+            position: absolute;
+            left: 0;
+        }
+
+        .navbar-toggler-icon::before {
+            top: -10px;
+        }
+
+        .navbar-toggler-icon::after {
+            top: 10px;
+        }
+
+        /* Slide-in Sidebar Menu */
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #191970;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+            z-index: 999;
+        }
+
+        .side-menu a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-menu a:hover {
+            color: blue;
+        }
+
+        .side-menu .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 36px;
+            color: blue;
+        }
+
+    </style>
+    
+    <style>
+        #typing-text {
+       font-family: Comic Neue, cursive;
+            color: #FF01FB;
+            font-size: 5em;
+            text-align: center;
+            letter-spacing: 2px;
+            border-right: 2px solid;
+            white-space: nowrap; 
+            overflow: hidden;
+            width: 16ch;
+            animation: typing 4s steps(15, end), blink-caret 0.75s step-end infinite;
+        }
+
+        /* Typing effect */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 19ch; } /* Matches the length of the text */
+        }
+
+        /* Blinking caret effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #264653; }
+        }
+    </style>
+
+<!-- CSS for Custom Background Color, White Text, Fade-In Animations, and Effects -->
+<style>
+    /* Background color customization */
+    .custom-bg {
+        background-color: #02A9EA; /* Keep the existing background color */
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    /* Set all text color to white */
+    .banner-main, .custom-bg, .para {
+        color: white !important; /* Force all text in these sections to white */
+    }
+
+    /* Typography styles */
+    h2, h5 {
+        font-family: 'Comic Neue', cursive;
+    }
+
+    /* Fading animations */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(50px); /* Moves the elements slightly downwards */
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transition for opacity and position */
+    }
+
+    .fade-in.active {
+        opacity: 1;
+        transform: translateY(0); /* Element moves to its original position */
+    }
+
+    /* Hover effects, shadows, and transitions */
+    .custom-bg .row img {
+        transition: transform 0.5s ease; /* Smooth scaling effect on hover */
+    }
+
+    .custom-bg .row img:hover {
+        transform: scale(1.1); /* Enlarges image slightly on hover */
+    }
+
+    .custom-bg h2:hover {
+        color: #007bff; /* Change color on hover for headings */
+    }
+
+    .custom-bg {
+        transition: box-shadow 0.5s ease;
+    }
+
+    .custom-bg:hover {
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Deepens shadow on hover */
+    }
+</style>
+
+   
+</head>
+
+<body style="background-color: #000300;">
+    <nav style="background-color: #02A9EA;" class="navbar navbar-dark py-2">
+        <div class="container">
+            <a href="/">
+                <img style="width: 45px; margin-left: -20px;" src="discord.png" alt="">
+                <img style="width: 100px;margin-left: 12px;" src="try1.png" alt=""> 
+            </a>
+            <button class="navbar-toggler" type="button" id="toggleMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Slide-in Sidebar Menu -->
+    <div style="font-size: 16px;font-family: Comic Neue, cursive;" id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" id="closeMenu">&times;</a>
+        <a href="#nextSection">So Home</a>
+    <a href="#wallet">What is Shiba Bonke?</a>
+        <a href="#storage">Very Community</a>
+        <a href="#tipbots">So BonkePedia</a>
+        <a href="#explorer">Much Wallets</a>
+        <a href="#footer">Shiba Bonke <span style="color: yellow:">
+            $Swag
+        </span> </a>
+    </div>
+
+<div style="position: relative; width: 30vw; height: 2vh; overflow: hidden;">
+    
+    </div>
+
+
+<section style="margin-top: 20px; padding-top: %; background-color: ">
+    
+   <center> <h1 style="font-family: Comic Neue, cursive; font-weight: 900; color: #FFFEFF; margin-top: 25%; margin-left: 2%; font-size: 55px;">
+        Shiba Bonke Tokens
+    </h1></center>
+   
+    <center>
+ <div style="font-size: 25px;font-weight: 200;font-family: Comic Neue, cursive;" id="typing-text"><strong>Where memes rule.</strong></div>
+    </center>
+</section>
+
+<section>
+    <img src="new.png" style="position: center; height: 350px;" alt="">
+</section>
+
+<section style="margin-left: 10%; margin-top: 60%; font-family: Comic Neue, cursive; margin-right:10%;">
+    <h1 style="color: white">
+        <strong>What is </br> Shiba Bonke?</strong>
+    </h1></br></br>
+    
+    <h4 style="color: white; font-family: Comic Neue, cursive;">
+  
+        An open-source peer-to-peer digital currency, favoured by </br><span style="color: #FAFF00;"> Dogecoiners worldwide. </span>
+    </h4></br></br>
+   
+    <h5 style="color: white; font-family: Comic Neue, cursive;">
+        At its heart, Shiba Bonke is the accidental crypto movement that makes people smile! It is also an opensource peer-to-peer cryptocurrency that utilises blockchain technology, a highly secure decentralised system of storing information as a public ledger that is maintained by a network of computers called nodes. More than this, though, is the ethos of Shiba Bonke, summarised in the <u> Shiba Bonke Manifesto </u> , and its amazing, vibrant community made up of friendly folks just like you!
+    </h5>
+</section>
+
+<section style="margin-top: 80px; background-image: url('3.png'); background-size: cover; background-position: center; height: 515px;">
+    <img src="circle1.png" style="height: 250px; position: relative; top: 10%; transform: translateX(31%);" alt="">
+</section>
+
+ 
+ 
+<section style="margin-top: 100px;" class="banner-main px-5">
+    <div class="banner px-5" style="background-image: url('');">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <!-- Add content here if needed -->
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="" width="300" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- First Section with Customizable Background Color, Shadow, and Transition Effects -->
+    <div class="custom-bg shadow container white-section mb-5 fade-in">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <br>
+                <img src="some1.png" width="100" alt="">
+                <h2 class="mt-3"><strong>Secure Blockchain</strong></h2>
+                <br>
+                <h5 class="para">
+                    Completely safe like Dogecoin, Bonke's blockchain is secured using Merged Mining.
+                </h5> 
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Section with Customizable Background Color, Shadow, and Transition Effects -->
+    <div class="custom-bg shadow container white-section mb-5 fade-in">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <br>
+                <img src="some2.png" width="100" alt="">
+                <h2 class="mt-3"><strong>Bonke Core</strong></h2>
+                <br>
+                <h5 class="para">
+                    Send, receive, and manage your Bonke effortlessly with the intuitive wallet interface.
+                </h5> 
+                <br><br>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section style="margin-top: 180px; margin-left: 10%; font-family: Comic Neue, cursive; background-color: black;color: white;">
+    <h2 style="margin-style: 6%;">
+        <strong> Getting Started</strong>
+    </h2>
+    <section class="old-in" style="display: flex; align-items: center; margin-top:30px; font-family: Handjet, sans-serif;">
+    <div style="display: flex; justify-content: center; align-items: center; width: 50px; height: 30px; background-color: #02A9EA; color: white; font-size: 25px; font-weight: bold; border-radius: 3px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); cursor: default; user-select: none; font-family: Poppins, sans-serif; margin-left: 10px;">
+        01
+    </div>
+    <div style="margin-left: 10px; font-size: 20px; font-family: Poppins, sans-serif;">
+        <strong>Choosing a wallet</strong>
+    </div>
+</section>
+
+<div class="old-in" style="margin-left: 10px; font-family: Comic Neue, cursive; margin-top: 30px;">
+    <h5>A wallet is necessary for people wanting to use, trade, or hold Shiba Bonke. You can pick a wallet.</h5>
+</div>
+
+<section class="new" style="display: flex; align-items: center;">
+    <div style="display: flex; justify-content: center; align-items: center; width: 110px; height: 30px; background-color: #02A9EA; color: white; font-size: 14px; font-weight: bold; border-radius: 3px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); cursor: default; user-select: none; font-family: Comic Neue, cursive; margin-left: 10px; margin-top: 30px;">
+        Learn More
+    </div>
+</section>
+    
+    <section class="old-in" style="display: flex; align-items: center; margin-top:70px;">
+    <div style="display: flex; justify-content: center; align-items: center; width: 50px; height: 30px; background-color: #02A9EA; color: white; font-size: 25px; font-weight: bold; border-radius: 3px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); cursor: default; user-select: none; font-family: Poppins, sans-serif; margin-left: 10px;">
+        02
+    </div>
+    <div style="margin-left: 10px; font-size: 20px; font-family: Poppins, sans-serif;">
+        <strong>Configure your wallet</strong>
+    </div>
+</section>
+
+<div class="old-in" style="margin-left: 10px; font-family: Comic Neue, cursive; margin-top: 30px;">
+    <h5>After downloading, you can configure your wallet according to our guide.</h5>
+</div>
+
+<section class="new" style="display: flex; align-items: center;">
+    <div style="display: flex; justify-content: center; align-items: center; width: 110px; height: 30px; background-color: #02A9EA; color: white; font-size: 14px; font-weight: bold; border-radius: 3px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); cursor: default; user-select: none; font-family: Comic Neue, cursive; margin-left: 10px; margin-top: 30px;">
+        Learn More
+    </div>
+</section>
+
+<section class="old-in" style="display: flex; align-items: center; margin-top:70px;">
+    <div style="display: flex; justify-content: center; align-items: center; width: 50px; height: 30px; background-color: #02A9EA; color: white; font-size: 25px; font-weight: bold; border-radius: 3px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); cursor: default; user-select: none; font-family: Poppins, sans-serif; margin-left: 10px;">
+        03
+    </div>
+    <div style="margin-left: 10px; font-size: 20px; font-family: Poppins, sans-serif;">
+        <strong>get some shiba bonke</strong>
+    </div>
+</section>
+
+<div class="old-in" style="margin-left: 10px; font-family: Comic Neue, cursive; margin-top: 30px;">
+    <h5>
+       There’s lots of ways to get your hands on some Shiba Bonke.
+    </h5>
+</div>
+
+<section class="new" style="display: flex; align-items: center;">
+    <div style="display: flex; justify-content: center; align-items: center; width: 110px; height: 30px; background-color: #02A9EA; color: white; font-size: 14px; font-weight: bold; border-radius: 3px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); cursor: default; user-select: none; font-family: Comic Neue, cursive; margin-left: 10px; margin-top: 30px;">
+        Learn More
+    </div>
+</section>
+    </section> 
+    
+   <center style="color:white; font-family: Comic Neue, cursive; margin-top: 130px;"> <h1>
+       <strong> Bonkerium </strong>
+    </h1> </center>
+               
+    <center style="color:white; font-family: Comic Neue, cursive;"> <h5>
+        Bonke's L2 Blockchain </strong>
+    </h5> </center>
+    
+    </br></br>
+
+
+      <center><section>
+<div style="background-color: #1A1A1A; border-radius: 10%; padding: 30px; width: 350px; font-family: Comic Neue, cursive; color: #fff;">
+    <div style="display: flex; align-items: center;">
+        <div style="background-color: #262626; padding: 10px; border-radius: 50%; margin-right: 10px;">
+            <img src="stake.svg" alt="Cat Icon" style="height: 50px;">
+        </div>
+        <div>
+            <h1 style="font-size: 20px; margin: 0;text-align: left;"><strong>Stake Bone</strong></h1>
+            <p style="font-size: 16px; margin: 0;text-align: left;">Earn Rewards</p>
+        </div>
+    </div>
+    <p style="font-size: 16px; margin-top: 20px; line-height: 1.5;text-align:left;">As a Delegator, you indirectly contribute to consensus by backing Validators, gaining from the ecosystem's success.</p>
+    <button style="background-color: #FF01FB; color: white; border: none; padding: 10px 70px; border-radius: 50px; font-size: 16px; margin-top: 20px; cursor: pointer;">
+        Stake Bone &rarr;
+    </button>
+</div>
+</section></center>
+
+<center style="margin-top: 50px;"><section>
+<div style="background-color: #1A1A1A; border-radius: 10%; padding: 30px; width: 350px; font-family: Comic Neue, cursive; color: #fff;">
+    <div style="display: flex; align-items: center;">
+        <div style="background-color: #262626; padding: 10px; border-radius: 50%; margin-right: 10px;">
+            <img src="bridge.svg" alt="Cat Icon" style="height: 50px;">
+        </div>
+        <div>
+            <h2 style="font-size: 20px; margin: 0;text-align: left;"><strong>Bridge Tokens</strong></h2>
+            <p style="font-size: 16px; margin: 0;text-align: left;">Between Chains</p>
+        </div>
+    </div>
+    <p style="font-size: 16px; margin-top: 20px; line-height: 1.5;text-align: left;">
+        Secure and seamless transfer of tokens between Ethereum and Bonkerium tokens.
+    </p>
+    <button style="background-color: #FF01FB; color: white; border: none; padding: 10px 40px; border-radius: 50px; font-size: 16px; margin-top: 20px; cursor: pointer;">
+        Bonkerium Bridge &rarr;
+    </button>
+</div>
+</section></center>
+ 
+   <center style="color:white; font-family: Comic Neue, cursive; margin-top:100px;"> <h1>
+       <strong> Latest Magazine Editions</strong>
+    </h1> </center>
+    
+    <div style="position: relative; width: 100vw; height: 70vh; overflow: hidden;margin-top: 70px;">
+    <img 
+        src="dom4.png" 
+        alt="" 
+        class="background-image" 
+        style="
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            opacity: 1; /* Show the first image initially */
+            transition: opacity 1s ease-in-out;">
+    <img 
+        src="dom2.png" 
+        alt="" 
+        class="background-image" 
+        style="
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            opacity: 0;
+            transition: opacity 1s ease-in-out;">
+    <img 
+        src="dom3.png" 
+        alt="" 
+        class="background-image" 
+        style="
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            opacity: 0;
+            transition: opacity 1s ease-in-out;">
+    <img 
+        src="dom4.png" 
+        alt="" 
+        class="background-image" 
+        style="
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            opacity: 0;
+            transition: opacity 1s ease-in-out;">
+            
+    <img 
+        src="dom1.png" 
+        alt="" 
+        class="background-image" 
+        style="
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            opacity: 0;
+            transition: opacity 1s ease-in-out;">
+</div>
+
+<script>
+    const images = document.querySelectorAll('.background-image');
+    let currentIndex = 0;
+
+    function showNextImageSequentially() {
+        images[currentIndex].style.opacity = 0; // Hide current image
+        currentIndex = (currentIndex + 1) % images.length; // Move to next index
+        images[currentIndex].style.opacity = 1; // Show next image
+    }
+
+    function startRandomSlideshow() {
+        setInterval(() => {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            images.forEach((img, index) => {
+                img.style.opacity = index === randomIndex ? 1 : 0;
+            });
+        }, 5000); // Change image every 5 seconds
+    }
+
+    function startSlideshow() {
+        const sequentialDisplay = setInterval(() => {
+            showNextImageSequentially();
+            if (currentIndex === 0) { // After one full cycle, start random slideshow
+                clearInterval(sequentialDisplay);
+                startRandomSlideshow();
+            }
+        }, 5000); // Show each image sequentially every 5 seconds
+    }
+
+    startSlideshow(); // Start the slideshow
+</script>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        // Open the side menu
+        document.getElementById('toggleMenu').addEventListener('click', function() {
+                    document.getElementById('sideMenu').style.width = "250px";
+        });
+
+        // Close the side menu
+        document.getElementById('closeMenu').addEventListener('click', function() {
+            document.getElementById('sideMenu').style.width = "0";
+        });
+    </script>
+    
+    <script>
+        // Scroll-triggered fade-in effect for each section separately
+        window.addEventListener('scroll', function() {
+            let fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(element => {
+                let position = element.getBoundingClientRect().top;
+                let screenPosition = window.innerHeight / 1.5; // Adjust for when to trigger the fade-in effect
+
+                if (position < screenPosition) {
+                    element.classList.add('active');
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // JavaScript to activate the fade-in effect when elements are scrolled into view
+document.addEventListener('scroll', function() {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    fadeInElements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+
+        if (elementPosition < screenPosition) {
+            element.classList.add('active');
+        }
+    });
+});
+
+    </script>
+    
+    </br></b>
+    <center><button style="background-color: #FF01FB; color: white; border: none; padding: 20px 30px; border-radius: 50px; font-size: 16px; margin-top: 20px; cursor: pointer; font-family: Comic Neue, cursive;">
+        Visit the Bonk &rarr;
+    </button></center>
+    
+    <footer style="margin-top: 120px; font-family: Comic Neue, cursive; margin-left: 2%;">
+        
+            <!-- Footer with Icons -->
+    <div class="social-icons">
+        <a href="https://twitter.com/yourprofile" target="_blank" class="icon-link">
+            <i class="fab fa-twitter"></i> <!-- X/Twitter icon -->
+        </a>
+        <a href="https://discord.gg/yourserver" target="_blank" class="icon-link">
+            <i class="fab fa-discord"></i> <!-- Discord icon -->
+        </a>
+        <a href="https://t.me/yourchannel" target="_blank" class="icon-link">
+            <i class="fab fa-telegram-plane"></i> <!-- Telegram icon -->
+        </a>
+    </div>
+        
+ <center style="margin-top: 50px;"><h6><span style="color: #FAFF00;">Contributors</h6>
+ <center>
+<p style="color: white;"> © 2024 | The Shiba Bonke Foundation & Shiba Bonke Project. All rights reserved.</center>
+        </p>
+    </footer>
+   
+    
+    </br>
+</body>
+</html>
